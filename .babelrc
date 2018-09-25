@@ -1,0 +1,22 @@
+{
+    "preset": [
+        [
+            "env",
+            {
+            "targets": {
+              "browsers": ["> 1%","last 2 versions", "not ie <= 12"],
+              "node":"current"
+            },
+            "modules": false
+          }
+        ],
+          "stage-2",
+          "react"
+    ],
+    "plugin": [
+        "transform-runtime",
+        "transform-decorators-legacy",
+        "react-hot-loader/babel",
+        ["import",{"libraryName":"antd","style":"css"}]
+    ]
+}
