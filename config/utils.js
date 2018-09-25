@@ -64,3 +64,11 @@ exports.assetsPath = function(...rootPath){
         return path.join(...rootPath,path||'')
     }
 }
+
+// 样式解析方法
+exports.computeStyleLoader = function(isProduction,loaders){
+    
+    if(isProduction){
+        
+    }
+}
