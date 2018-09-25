@@ -8,12 +8,4 @@ const baseConfig = require('./baseConfig');
 
 module.exports = merge(baseConfig,{
     devtool: '#cheap-module-eval-source-map',
-    module: {
-        rules: [
-            {
-                test: /\.(css|less)$/,
-                loader: 
-            }
-        ]
-    }
 })
