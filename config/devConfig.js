@@ -8,4 +8,12 @@ const baseConfig = require('./baseConfig');
 
 module.exports = merge(baseConfig,{
     devtool: '#cheap-module-eval-source-map',
+    module: {
+        rules: [
+            {
+                test: /\.(css|less)$/,
+                loader: utils.computeStyleLoader(process.env.NODE_ENV,['style-loader','css-loader','less-loader','postcss-loader'])
+            }
+        ]
+    }
 })

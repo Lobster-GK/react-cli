@@ -66,9 +66,17 @@ exports.assetsPath = function(...rootPath){
 }
 
 // 样式解析方法
-exports.computeStyleLoader = function(isProduction,loaders){
-    
+exports.computeStyleLoader = function(env,loaders){
+    const baseStyleConfig = {
+        production:{
+            
+        },
+        development:{
+
+        }
+    }
     if(isProduction){
+        {}
         
     }
 }
